@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Development Club @ UWT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a><img src="images/logo.png" alt="Logo goes here, i can't find it"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#info">INFO</a></li>
+                    <li><a href="#ctct">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1>Game Development Club</h1>
+            <p>Placeholder Placeholder blah blah</p>
+            <a href="https://i.imgflip.com/4nanry.png?a481560" class="hero-btn">JOIN US</a>
+        </div>
+    </section>
+    
+    <section class="campus" id="info">
+        <h1>Information</h1>
+        <p></p>
+        <div class="row">
+            <div class="campus-col">
+                <a href="#spot">
+                   <img src="https://i.ibb.co/hf4YkC4/location.jpg" alt="Section 1">
+                    <div class="layer">
+                        <h3>LOCATION</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="campus-col">
+                <a href="https://pbs.twimg.com/media/EG3ErL4WwAANtaB.jpg">
+                    <img src="https://i.ibb.co/6w9p9kq/newyork.png" alt="Section 2">
+                    <div class="layer">
+                        <h3>PLACEHOLDER 2</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="campus-col">
+                <a href="#ctct">
+                    <img src="https://i.ibb.co/3rQppqz/place3.jpg" alt="Section 3">
+                    <div class="layer">
+                        <h3>CONTACT</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="location" id="spot">
+        <h1>Location</h1>
+        <p>University of Washington Tacoma<br> <br>DOU 260<br><br>12:30 - 1:30<br></p>
+        <div class="row">
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.4900097961813!2d-122.44306911374072!3d47.24612073844891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490557697db4dd1%3A0x9f5a22756096870a!2sDougan%20Building%2C%201721%20Jefferson%20Ave%2C%20Tacoma%2C%20WA%2098402!5e0!3m2!1sen!2sus!4v1734836164963!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+    </section>
+    
+    <section class="contact" id="ctct">
+        <h1>Contact</h1>
+        <p>Placeholder text Placeholder text<br>Whatever else here</p>
+    </section>
+    
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
