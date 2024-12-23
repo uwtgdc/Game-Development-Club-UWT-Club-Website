@@ -277,6 +277,13 @@ h3 {
     opacity: 1;
 }
 
+.project { 
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+)
+
 .location {
     width: 80%;
     margin: auto;
@@ -317,6 +324,7 @@ h3 {
     margin: auto;
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 25px;
 }
 
 .contact p {
