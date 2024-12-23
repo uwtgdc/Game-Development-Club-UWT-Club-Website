@@ -1,15 +1,22 @@
-/* GLOBAL STYLES */
+/*
+ * CSS Stylesheet
+ */
+
+/* Reset default styles and set base font */
 * {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
 }
 
+/* Prevent horizontal scrolling on the body */
 body {
     overflow-x: hidden;
 }
 
-/* HEADER STYLES */
+/* Header section with background image and overlay
+ * Creates a full-height hero section with a semi-transparent dark overlay
+ */
 .header {
     min-height: 100vh;
     width: 100%;
@@ -19,7 +26,9 @@ body {
     position: relative;
 }
 
-/* NAVIGATION STYLES */
+/* Navigation bar styling
+ * Uses flexbox for layout with space between logo and navigation links
+ */
 nav {
     display: flex;
     padding: 2% 6%;
@@ -27,31 +36,43 @@ nav {
     align-items: center;
 }
 
+/* Logo sizing within navigation */
 nav img {
     width: 150px;
 }
 
+/* Navigation links container
+ * Expands to fill available space and aligns links to the right
+ */
 .nav-links {
     flex: 1;
     text-align: right;
 }
 
+/* Remove default list styling from navigation */
 .nav-links ul {
     list-style: none;
 }
 
+/* Individual navigation items
+ * Displayed inline with consistent spacing and positioning
+ */
 .nav-links ul li {
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
 
+/* Navigation link styling */
 .nav-links ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 13px;
 }
 
+/* Animated underline effect for navigation links
+ * Creates a line that expands from center on hover
+ */
 .nav-links ul li::after {
     content: '';
     width: 0;
@@ -62,15 +83,21 @@ nav img {
     transition: 0.5s;
 }
 
+/* Expand underline on hover */
 .nav-links ul li:hover::after {
     width: 100%;
 }
 
+/* Hide hamburger menu icon by default
+ * Will be shown in mobile view
+ */
 nav .fa {
     display: none;
 }
 
-/* ABOUT SECTION */
+/* About section styling
+ * Creates a card-like container with shadow and rounded corners
+ */
 .about-club {
     width: 80%;
     margin: 50px auto;
@@ -81,6 +108,7 @@ nav .fa {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* About section heading */
 .about-club h2 {
     font-size: 28px;
     font-weight: 700;
@@ -88,6 +116,7 @@ nav .fa {
     margin-bottom: 20px;
 }
 
+/* About section paragraph text */
 .about-club p {
     font-size: 16px;
     color: #555;
@@ -95,7 +124,9 @@ nav .fa {
     margin-bottom: 15px;
 }
 
-/* TEXT BOX */
+/* Hero text container
+ * Centered absolutely within the header section
+ */
 .text-box {
     width: 90%;
     color: #fff;
@@ -106,13 +137,16 @@ nav .fa {
     text-align: center;
 }
 
+/* Hero text paragraph styling */
 .text-box p {
     margin: 10px 0 40px;
     color: #fff;
     font-size: 14px;
 }
 
-/* BUTTON STYLES */
+/* Call-to-action button styling
+ * Transparent button with border that fills on hover
+ */
 .hero-btn {
     display: inline-block;
     text-decoration: none;
@@ -125,18 +159,20 @@ nav .fa {
     cursor: pointer;
 }
 
+/* Button hover effect */
 .hero-btn:hover {
     border: 1px solid #c836f4;
     background: #c836f4;
     transition: 1s;
 }
 
-
+/* Main heading styles */
 h1 {
     font-size: 36px;
     font-weight: 600;
 }
 
+/* General paragraph styling */
 p {
     color: #777;
     font-size: 14px;
@@ -145,19 +181,23 @@ p {
     padding: 10px;
 }
 
+/* Flex row layout
+ * Used for creating responsive grid layouts
+ */
 .row {
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
 
+/* Subheading styles */
 h3 {
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
 }
 
-/* CAMPUS SECTION */
+/* Campus section container */
 .campus {
     width: 80%;
     margin: auto;
@@ -165,6 +205,9 @@ h3 {
     padding-top: 50px;
 }
 
+/* Campus image columns
+ * Creates responsive image grid with hover effects
+ */
 .campus-col {
     flex-basis: 32%;
     border-radius: 10px;
@@ -173,11 +216,15 @@ h3 {
     overflow: hidden;
 }
 
+/* Campus images */
 .campus-col img {
     width: 100%;
     display: block;
 }
 
+/* Hover overlay for campus images
+ * Creates a semi-transparent purple overlay on hover
+ */
 .layer {
     background: transparent;
     height: 100%;
@@ -188,10 +235,12 @@ h3 {
     transition: 0.5s;
 }
 
+/* Overlay hover effect */
 .layer:hover {
     background: rgba(162, 0, 226, 0.7);
 }
 
+/* Text overlay for campus images */
 .layer h3 {
     width: 100%;
     font-weight: 500;
@@ -205,12 +254,13 @@ h3 {
     transition: 0.5s;
 }
 
+/* Show text on hover */
 .layer:hover h3 {
     bottom: 49%;
     opacity: 1;
 }
 
-/* LOCATION SECTION */
+/* Location section layout */
 .location-content {
     display: flex;
     flex-wrap: wrap;
@@ -219,6 +269,7 @@ h3 {
     margin-top: 2rem;
 }
 
+/* Location information card */
 .location-info {
     flex: 1;
     min-width: 300px;
@@ -228,16 +279,19 @@ h3 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Location details container */
 .location-details {
     text-align: center;
 }
 
+/* Location icon styling */
 .location-details i {
     font-size: 2rem;
     color: #a71cb7;
     margin-bottom: 1rem;
 }
 
+/* Meeting time display */
 .meeting-time {
     margin-top: 1rem;
     display: flex;
@@ -246,29 +300,33 @@ h3 {
     gap: 0.5rem;
 }
 
+/* Map container */
 .location-map {
     flex: 2;
     min-width: 300px;
     height: 400px;
 }
 
+/* Embedded map styling */
 .location-map iframe {
     width: 100%;
     height: 100%;
     border-radius: 10px;
 }
 
+/* Location heading */
 .location h1 {
     text-align: center;
-    margin-bottom: 2rem; /* Optional: adds some space between heading and content */
+    margin-bottom: 2rem;
 }
 
-/* Updated Contact Styles */
+/* Contact section layout */
 .contact-content {
     margin-top: 2rem;
     padding: 2rem;
 }
 
+/* Contact information grid */
 .contact-info {
     display: flex;
     flex-wrap: wrap;
@@ -276,6 +334,7 @@ h3 {
     gap: 2rem;
 }
 
+/* Individual contact cards */
 .contact-item {
     flex: 1;
     min-width: 250px;
@@ -288,22 +347,25 @@ h3 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Contact card hover effect */
 .contact-item:hover {
     transform: translateY(-5px);
 }
 
+/* Contact icon styling */
 .contact-item i {
     font-size: 2rem;
     color: #a71cb7;
     margin-bottom: 1rem;
 }
 
+/* Contact card headings */
 .contact-item h3 {
     color: #333;
     margin-bottom: 0.5rem;
 }
 
-/* Footer Styles */
+/* Footer styling */
 .footer {
     background: #1f1f1f;
     color: #fff;
@@ -311,6 +373,7 @@ h3 {
     margin-top: 4rem;
 }
 
+/* Footer content layout */
 .footer-content {
     width: 80%;
     margin: 0 auto;
@@ -320,54 +383,65 @@ h3 {
     gap: 2rem;
 }
 
+/* Footer sections */
 .footer-section {
     flex: 1;
     min-width: 250px;
 }
 
+/* Footer logo sizing */
 .footer-logo {
     width: 120px;
     margin-bottom: 1rem;
 }
 
+/* Footer section headings */
 .footer-section h3 {
     color: #fff;
     margin-bottom: 1.5rem;
 }
 
+/* Footer lists */
 .footer-section ul {
     list-style: none;
 }
 
+/* Footer list items */
 .footer-section ul li {
     margin-bottom: 0.8rem;
 }
 
+/* Footer links */
 .footer-section ul li a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
+/* Footer link hover effect */
 .footer-section ul li a:hover {
     color: #a71cb7;
 }
 
+/* Social media links container */
 .social-links {
     display: flex;
     gap: 1rem;
 }
 
+/* Social media link styling */
 .social-links a {
     color: #fff;
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
+/* Social media link hover effect */
 .social-links a:hover {
     color: #a71cb7;
 }
 
+/* Footer bottom section */
 .footer-bottom {
     text-align: center;
     margin-top: 3rem;
@@ -375,7 +449,9 @@ h3 {
     border-top: 1px solid #333;
 }
 
-/* Media Queries for mobile stuff */
+/* Mobile responsiveness
+ * Adjusts layout and styling for screens under 700px
+ */
 @media (max-width: 700px) {
     .location-content, .contact-content {
         flex-direction: column;
@@ -400,7 +476,7 @@ h3 {
     }
 }
 
-/* CONTACT SECTION */
+/* Contact section container */
 .contact {
     width: 80%;
     margin: auto;
@@ -408,11 +484,14 @@ h3 {
     padding-top: 50px;
 }
 
+/* Contact section text */
 .contact p {
     font-size: 22px;
 }
 
-/* MEDIA QUERIES */
+/* Mobile responsiveness for navigation and content
+ * Implements hamburger menu and adjusts layouts for mobile viewing
+ */
 @media (max-width: 700px) {
     .text-box h1 {
         font-size: 20px;
