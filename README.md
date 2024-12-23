@@ -1,5 +1,14 @@
 # Game-Development-Club-UWT-Club-Website
 
+# Changes
+Added documentation to CSS
+Added more styling to location and contact sections.
+Added Footer
+Added Routes to external pages
+Added logo
+Changed button colors
+
+
 # Project Overview
 
 Showcase our club's mission, activities, and achievements.
@@ -15,10 +24,13 @@ Contact Page: A form for inquiries and membership signups.
 Whatever else we feel like adding..
 
 # Issues
-Logo: No transparent version of the club logo is available.
-Routes: Navigation between pages is not implemented.
-Barebones Outline: The website is still in its early phase with placeholder content and minimal styling.
-Menu not accessible outside of landing page
-No Header/Footer
+Established but empty routes, location, projects, and contact buttons now
+go to their own unique pages. Please note though these routes are set they
+do not HAVE to go to what they are called. After WebDev team looks over the
+changes we can discuss what we want them to go to.
+
+Still many placeholder texts/links.
+
+Footer is established but a bit messy.
 
 This project is licensed under the MIT License.
