@@ -1,0 +1,545 @@
+/*
+ * CSS Stylesheet
+ */
+
+/* Reset default styles and set base font */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Prevent horizontal scrolling on the body */
+body {
+    overflow-x: hidden;
+}
+
+/* Header section with background image and overlay
+ * Creates a full-height hero section with a semi-transparent dark overlay
+ */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://neom.scene7.com/is/image/neom/media-gaming-hero-thumbnail?wid=1920&hei=1080);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Navigation bar styling
+ * Uses flexbox for layout with space between logo and navigation links
+ */
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo sizing within navigation */
+nav img {
+    width: 150px;
+}
+
+/* Navigation links container
+ * Expands to fill available space and aligns links to the right
+ */
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+/* Remove default list styling from navigation */
+.nav-links ul {
+    list-style: none;
+}
+
+/* Individual navigation items
+ * Displayed inline with consistent spacing and positioning
+ */
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+/* Navigation link styling */
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Animated underline effect for navigation links
+ * Creates a line that expands from center on hover
+ */
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+/* Expand underline on hover */
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* Hide hamburger menu icon by default
+ * Will be shown in mobile view
+ */
+nav .fa {
+    display: none;
+}
+
+/* About section styling
+ * Creates a card-like container with shadow and rounded corners
+ */
+.about-club {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    background: #fff3f3;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About section heading */
+.about-club h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #a71cb7;
+    margin-bottom: 20px;
+}
+
+/* About section paragraph text */
+.about-club p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Hero text container
+ * Centered absolutely within the header section
+ */
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Hero text paragraph styling */
+.text-box p {
+    margin: 10px 0 40px;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Call-to-action button styling
+ * Transparent button with border that fills on hover
+ */
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.hero-btn:hover {
+    border: 1px solid #c836f4;
+    background: #c836f4;
+    transition: 1s;
+}
+
+/* Main heading styles */
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+/* General paragraph styling */
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+/* Flex row layout
+ * Used for creating responsive grid layouts
+ */
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Subheading styles */
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* Campus section container */
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Campus image columns
+ * Creates responsive image grid with hover effects
+ */
+.campus-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Campus images */
+.campus-col img {
+    width: 100%;
+    display: block;
+}
+
+/* Hover overlay for campus images
+ * Creates a semi-transparent purple overlay on hover
+ */
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+/* Overlay hover effect */
+.layer:hover {
+    background: rgba(162, 0, 226, 0.7);
+}
+
+/* Text overlay for campus images */
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+/* Show text on hover */
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* Location section layout */
+.location-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Location information card */
+.location-info {
+    flex: 1;
+    min-width: 300px;
+    padding: 2rem;
+    background: #fff3f3;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Location details container */
+.location-details {
+    text-align: center;
+}
+
+/* Location icon styling */
+.location-details i {
+    font-size: 2rem;
+    color: #a71cb7;
+    margin-bottom: 1rem;
+}
+
+/* Meeting time display */
+.meeting-time {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Map container */
+.location-map {
+    flex: 2;
+    min-width: 300px;
+    height: 400px;
+}
+
+/* Embedded map styling */
+.location-map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Location heading */
+.location h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Contact section layout */
+.contact-content {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+/* Contact information grid */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Individual contact cards */
+.contact-item {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 2rem;
+    background: #fff3f3;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact card hover effect */
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact icon styling */
+.contact-item i {
+    font-size: 2rem;
+    color: #a71cb7;
+    margin-bottom: 1rem;
+}
+
+/* Contact card headings */
+.contact-item h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer styling */
+.footer {
+    background: #1f1f1f;
+    color: #fff;
+    padding: 4rem 0 1rem 0;
+    margin-top: 4rem;
+}
+
+/* Footer content layout */
+.footer-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/* Footer sections */
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Footer logo sizing */
+.footer-logo {
+    width: 120px;
+    margin-bottom: 1rem;
+}
+
+/* Footer section headings */
+.footer-section h3 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer lists */
+.footer-section ul {
+    list-style: none;
+}
+
+/* Footer list items */
+.footer-section ul li {
+    margin-bottom: 0.8rem;
+}
+
+/* Footer links */
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Footer link hover effect */
+.footer-section ul li a:hover {
+    color: #a71cb7;
+}
+
+/* Social media links container */
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Social media link styling */
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+/* Social media link hover effect */
+.social-links a:hover {
+    color: #a71cb7;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #333;
+}
+
+/* Mobile responsiveness
+ * Adjusts layout and styling for screens under 700px
+ */
+@media (max-width: 700px) {
+    .location-content, .contact-content {
+        flex-direction: column;
+    }
+    
+    .location-map {
+        height: 300px;
+    }
+    
+    .footer-section {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Contact section container */
+.contact {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Contact section text */
+.contact p {
+    font-size: 22px;
+}
+
+/* Mobile responsiveness for navigation and content
+ * Implements hamburger menu and adjusts layouts for mobile viewing
+ */
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: right 0.3s ease-in-out;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .map-iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .layer {
+        background: transparent !important;
+    }
+
+    .layer h3 {
+        bottom: 49% !important;
+        opacity: 1 !important;
+    }
+}

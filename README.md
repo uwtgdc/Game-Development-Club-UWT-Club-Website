@@ -12,10 +12,10 @@ Landing Page: Introduction to the club w/ join button.
 Projects Page: A list of upcoming and past projects.
 Officers Page: Showcase key contributors and their projects.
 Contact Page: A form for inquiries and membership signups.
+Upcoming Events Page: A page for the what where and when of upcoming events and meetings 
 Whatever else we feel like adding..
 
 # Issues
-Logo: No transparent version of the club logo is available.
 Routes: Navigation between pages is not implemented.
 Barebones Outline: The website is still in its early phase with placeholder content and minimal styling.
 Menu not accessible outside of landing page
