@@ -1,9 +1,9 @@
 # Game-Development-Club-UWT-Club-Website
 
 # Changes
-Changed nav bar for simplicity, can now copy/paste nav bar to other .html files
-Changed Information section to Club activities
-Changed info page redirects to club activity page redirects
+- Changed nav bar for simplicity, can now copy/paste nav bar to other .html files
+- Changed Information section to Club activities
+- Changed info page redirects to club activity page redirects
 
 # Project Overview
 Showcase our club's mission, activities, and achievements.
@@ -13,9 +13,9 @@ Serve as a portal for resources and useful links related to game development.
 
 # Features (Planned)
 
-Projects Page: A list of upcoming and past projects.
-- Has been split to 3 pages, which are accessible from "club activities" in index.html
-About Page: Showcase key contributors, their projects, club officers, club history, and other info
+- Projects Page: A list of upcoming and past projects.
+ Has been split to 3 pages, which are accessible from "club activities" in index.html
+- About Page: Showcase key contributors, their projects, club officers, club history, and other info
 
 # Issues
 Established but empty routes, location, projects, and contact buttons now
