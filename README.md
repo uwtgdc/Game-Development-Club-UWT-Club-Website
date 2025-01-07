@@ -1,27 +1,21 @@
 # Game-Development-Club-UWT-Club-Website
 
 # Changes
-Added documentation to CSS
-Added more styling to location and contact sections.
-Added Footer
-Added Routes to external pages
-Added logo
-Changed button colors
-
+Changed nav bar for simplicity, can now copy/paste nav bar to other .html files
+Changed Information section to Club activities
+Changed info page redirects to club activity page redirects
 
 # Project Overview
-
 Showcase our club's mission, activities, and achievements.
 Provide details about upcoming events.
 Highlight the games and projects developed by our members.
 Serve as a portal for resources and useful links related to game development.
 
 # Features (Planned)
-Landing Page: Introduction to the club w/ join button.
+
 Projects Page: A list of upcoming and past projects.
-Officers Page: Showcase key contributors and their projects.
-Contact Page: A form for inquiries and membership signups.
-Whatever else we feel like adding..
+- Has been split to 3 pages, which are accessible from "club activities" in index.html
+About Page: Showcase key contributors, their projects, club officers, club history, and other info
 
 # Issues
 Established but empty routes, location, projects, and contact buttons now
