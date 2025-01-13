@@ -272,9 +272,9 @@ h3 {
 /* Location information card */
 .location-info {
     flex: 1;
-    min-width: 300px;
+    min-width: 100;
     padding: 2rem;
-    background: #fff3f3;
+    background: #dab1eb;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -318,6 +318,44 @@ h3 {
 .location h1 {
     text-align: center;
     margin-bottom: 2rem;
+}
+
+/* Format Meeting Flyers */
+.upcoming-image i {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* Upcoming section layout */
+.upcoming-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* upcoming information card */
+.upcoming-info {
+    flex: 1;
+    min-width: 100;
+    padding: 2rem;
+    background: #dab1eb;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Upcoming details container */
+.upcoming-details {
+    text-align: center;
+}
+
+/* Upcoming icon styling */
+.upcoming-details i {
+    font-size: 2rem;
+    color: #a71cb7;
+    margin-bottom: 1rem;
 }
 
 /* Contact section layout */
