@@ -1,5 +1,9 @@
 # Game-Development-Club-UWT-Club-Website
 
+# Changes
+Merged Pages, additional styling added
+
+
 # Project Overview
 
 Showcase our club's mission, activities, and achievements.
@@ -8,17 +12,9 @@ Highlight the games and projects developed by our members.
 Serve as a portal for resources and useful links related to game development.
 
 # Features (Planned)
-Landing Page: Introduction to the club w/ join button.
-Projects Page: A list of upcoming and past projects.
-Officers Page: Showcase key contributors and their projects.
-Contact Page: A form for inquiries and membership signups.
-Whatever else we feel like adding..
+In progress
 
 # Issues
-Logo: No transparent version of the club logo is available.
-Routes: Navigation between pages is not implemented.
-Barebones Outline: The website is still in its early phase with placeholder content and minimal styling.
-Menu not accessible outside of landing page
-No Header/Footer
+I dunno lol but there are some for sure
 
 This project is licensed under the MIT License.
