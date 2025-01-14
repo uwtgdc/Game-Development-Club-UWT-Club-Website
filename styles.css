@@ -126,7 +126,7 @@ nav .fa {
 .about-club h2 {
     font-size: 28px;
     font-weight: 700;
-    color: #a71cb7;
+    color: #a61cb5;
     margin-bottom: 20px;
 }
 
@@ -138,6 +138,32 @@ nav .fa {
     line-height: 1.6;
     margin-bottom: 15px;
 }
+
+/* Find us here button on the Index page */
+.index-button {
+    display: inline-block;
+    background-color: #a61cb5; /* Primary button color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.index-button:hover {
+    background-color: #e49d33; /* Darker shade on hover */
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.index-button:active {
+    transform: translateY(0);
+    background-color: #004085; /* Even darker shade when clicked */
+}
+
 
 
 /* Hero text container
